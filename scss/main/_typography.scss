@@ -1,0 +1,89 @@
+@import url('https://fonts.googleapis.com/css2?family=Caveat:wght@400;700&family=Inter:wght@300;400;700&display=swap');
+
+.header{
+    .logo{
+            font-size: clamp(2.5rem,5vw,2.8rem);
+            color: $white;
+            font-family: $cursive;
+    }
+    nav{
+        ul{
+            a{
+                font-size: clamp(1.5rem, 5vw, 2.8rem);
+                font-family: $cursive;
+                color: $white;
+                text-decoration: none;
+                font-weight: 400;
+            }
+        }
+    }
+}
+.title{
+    height: 80%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    
+    h1{
+        font-size: clamp(3rem,5vw, 6.2rem);
+        color: $white;
+        font-family: $cursive;
+        animation: invisible 3s forwards;
+        
+    }
+
+}
+
+
+
+
+
+
+
+// MAIN SECTION W/ MQ
+
+.about{
+    &-text{
+        h2{
+            font-size: clamp(2.8rem, 5vw, 3.5rem);
+            text-align: center;
+            margin-bottom: 1.5rem;
+            font-family: $cursive;
+        }
+        p{
+            font-size: clamp(1.3rem, 3vw, 1.5rem);
+            text-align: justify;
+            font-family: $normal;
+        }
+    }
+}
+
+
+
+@media(min-width: 768px){
+    .about{
+        &-text{
+            h2{
+                text-align: justify;
+            }
+        }
+    }
+}
+
+
+@media(min-width: 1440px){
+    .about{
+        &-text{
+            h2{
+                font-size: clamp(4rem, 5vw, 6rem);
+            }
+            p{
+                font-size: clamp(2rem, 5vw, 2.5rem);
+                text-align: justify;
+                line-height: 1.6;
+                width: 95%;
+            }
+        }
+    }
+}

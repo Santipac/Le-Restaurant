@@ -1,0 +1,286 @@
+@import url("https://fonts.googleapis.com/css2?family=Caveat:wght@400;700&family=Inter:wght@300;400;700&display=swap");
+.header .logo {
+  font-size: clamp(2.5rem, 5vw, 2.8rem);
+  color: #fff;
+  font-family: "Caveat", cursive;
+}
+
+.header nav ul a {
+  font-size: clamp(1.5rem, 5vw, 2.8rem);
+  font-family: "Caveat", cursive;
+  color: #fff;
+  text-decoration: none;
+  font-weight: 400;
+}
+
+.title {
+  height: 80%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.title h1 {
+  font-size: clamp(3rem, 5vw, 6.2rem);
+  color: #fff;
+  font-family: "Caveat", cursive;
+  -webkit-animation: invisible 3s forwards;
+          animation: invisible 3s forwards;
+}
+
+.about-text h2 {
+  font-size: clamp(2.8rem, 5vw, 3.5rem);
+  text-align: center;
+  margin-bottom: 1.5rem;
+  font-family: "Caveat", cursive;
+}
+
+.about-text p {
+  font-size: clamp(1.3rem, 3vw, 1.5rem);
+  text-align: justify;
+  font-family: "Inter", sans-serif;
+}
+
+@media (min-width: 768px) {
+  .about-text h2 {
+    text-align: justify;
+  }
+}
+
+@media (min-width: 1440px) {
+  .about-text h2 {
+    font-size: clamp(4rem, 5vw, 6rem);
+  }
+  .about-text p {
+    font-size: clamp(2rem, 5vw, 2.5rem);
+    text-align: justify;
+    line-height: 1.6;
+    width: 95%;
+  }
+}
+
+*,
+*::before,
+*::after {
+  padding: 0;
+  margin: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+  font-family: 'Caveat', cursive;
+  font-family: 'Inter', sans-serif;
+}
+
+@-webkit-keyframes invisible {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes invisible {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+.hero {
+  height: 100vh;
+  position: relative;
+  overflow: hidden;
+}
+
+.hero .bg-video {
+  min-height: 100%;
+  min-width: 100%;
+  height: auto;
+  width: auto;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  z-index: -10;
+}
+
+.hero .header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 2rem 3rem;
+}
+
+.hero .header nav {
+  position: fixed;
+  right: 0;
+  top: 0;
+  background: #1d1d1b;
+  height: 100vh;
+  width: 50%;
+  z-index: 999;
+  text-transform: uppercase;
+  -webkit-transform: translateX(100%);
+          transform: translateX(100%);
+  -webkit-transition: -webkit-transform .5s ease-in-out;
+  transition: -webkit-transform .5s ease-in-out;
+  transition: transform .5s ease-in-out;
+  transition: transform .5s ease-in-out, -webkit-transform .5s ease-in-out;
+}
+
+.hero .header nav ul {
+  list-style-type: none;
+  padding: 0;
+  margin-top: 8em;
+}
+
+.hero .header nav ul a {
+  display: block;
+  margin-left: 2rem;
+  padding: .75em;
+}
+
+.hero .header nav .close {
+  float: right;
+  margin: 3.6rem 3.5rem 2.1rem 0;
+}
+
+.hero .header .open-nav {
+  -webkit-transform: translateX(0%);
+          transform: translateX(0%);
+}
+
+@media screen and (min-width: 769px) {
+  .hero .header .toggle, .hero .header .close {
+    display: none;
+  }
+  .hero .header nav {
+    height: auto;
+    width: auto;
+    background-color: transparent;
+    position: static;
+    -webkit-transform: translate(0);
+            transform: translate(0);
+  }
+  .hero .header nav ul {
+    margin: 0;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+  .hero .header nav ul a {
+    text-transform: none;
+    margin: 0;
+    padding: 1rem;
+  }
+  .hero .header nav ul a:hover {
+    color: rgba(255, 255, 255, 0.8);
+  }
+}
+
+.about {
+  height: -webkit-min-content;
+  height: -moz-min-content;
+  height: min-content;
+  background-color: #fff;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-rows: (1fr)[2];
+      grid-template-rows: repeat(2, 1fr);
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.about-img {
+  width: 100%;
+  padding: 2rem;
+}
+
+.about-img img {
+  max-width: 100%;
+}
+
+.about-text {
+  width: 100%;
+  padding: 2rem 2rem 0 2rem;
+  -ms-grid-row: 1;
+  -ms-grid-row-span: 1;
+  grid-row: 1 / 2;
+}
+
+@media (min-width: 768px) {
+  .about {
+    -ms-grid-columns: (1fr)[2];
+        grid-template-columns: repeat(2, 1fr);
+    -ms-grid-rows: 1fr;
+        grid-template-rows: 1fr;
+  }
+  .about-img {
+    width: 95%;
+  }
+  .about-text {
+    padding-bottom: 2rem;
+    grid-row: auto;
+  }
+}
+
+@media (min-width: 1440px) {
+  .about-text {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
+  }
+}
+
+.banner {
+  height: 12vh;
+  background-color: #1d1d1b;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.banner p {
+  font-size: clamp(2rem, 5vw, 3.5rem);
+  font-family: "Caveat", cursive;
+  font-weight: 900;
+  color: #fff;
+}
+/*# sourceMappingURL=custom.css.map */
