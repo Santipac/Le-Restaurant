@@ -44,7 +44,7 @@
           animation: invisible 3s forwards;
 }
 
-@media (max-width: 768px) {
+@media (min-width: 768px) {
   .header nav ul a {
     font-family: "Caveat", cursive;
   }
