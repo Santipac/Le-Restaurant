@@ -14,7 +14,7 @@
         ul{
             a{
                 font-size: clamp(1.5rem, 5vw, 2.8rem);
-                font-family: $cursive;
+                font-family: $normal;
                 color: $white;
                 text-decoration: none;
                 font-weight: 400;
@@ -41,7 +41,17 @@
 
 
 
-
+@media(max-width:768px){
+    .header{
+        nav{
+            ul{
+                a{
+                    font-family: $cursive;
+                }
+            }
+        }
+    }
+}
 
 
 
