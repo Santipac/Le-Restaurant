@@ -1,5 +1,5 @@
 .about{
-    height: min-content;
+    min-height:90vh;
     background-color: #fff;
     display: grid;
     grid-template-rows: repeat(2, 1fr);
@@ -15,6 +15,7 @@
         width: 100%;
         padding: 2rem 2rem 0 2rem;
         grid-row: 1 / 2;
+        animation: text-focus-in 1s both;
     }
 }
 

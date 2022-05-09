@@ -10,3 +10,24 @@ html{
     font-family: 'Caveat', cursive;
     font-family: 'Inter', sans-serif;
 }
+/* ===== Scrollbar CSS ===== */
+  /* Firefox */
+  * {
+    scrollbar-width: none;
+    scrollbar-color:  #b6b1b1;
+}
+
+  /* Chrome, Edge, and Safari */
+  *::-webkit-scrollbar {
+    width: 12px;
+}
+
+  *::-webkit-scrollbar-track {
+    background: #1d1d1b
+}
+
+  *::-webkit-scrollbar-thumb {
+    background-color: $white;
+    border-radius: none;
+    border: 3px none #ffffff;
+}

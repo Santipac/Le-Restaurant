@@ -1,10 +1,14 @@
 @import url('https://fonts.googleapis.com/css2?family=Caveat:wght@400;700&family=Inter:wght@300;400;700&display=swap');
 
 .header{
-    .logo{
+    a{
+        text-decoration: none;
+        .logo{
             font-size: clamp(2.5rem,5vw,2.8rem);
             color: $white;
             font-family: $cursive;
+            animation: text-focus-in 1s both;
+    }
     }
     nav{
         ul{
@@ -85,5 +89,23 @@
                 width: 95%;
             }
         }
+    }
+}
+
+.food{
+    &__title{
+        margin-top: 3rem;
+        font-size: clamp(3rem, 5vw, 4rem);
+        font-family: $cursive;
+        text-align: center;
+    }
+    .card__title{
+        margin-top: 3rem;
+        text-align: center;
+        font-family: $cursive;
+        font-size: clamp(2.3rem, 5vw, 3rem);
+    }
+    .card-text{
+        font-size: clamp(1.2rem, 5vw, 1.5rem);
     }
 }
