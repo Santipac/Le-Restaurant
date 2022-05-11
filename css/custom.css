@@ -40,6 +40,7 @@
   font-size: clamp(3rem, 5vw, 6.2rem);
   color: #fff;
   font-family: "Caveat", cursive;
+  font-weight: 900;
   -webkit-animation: invisible 3s forwards;
           animation: invisible 3s forwards;
 }
@@ -96,7 +97,7 @@
 }
 
 .food .card-text {
-  font-size: clamp(1.2rem, 5vw, 1.5rem);
+  font-size: clamp(0.8rem, 5vw, 1.4rem);
 }
 
 *,
@@ -358,8 +359,6 @@ html {
   -ms-grid-row: 1;
   -ms-grid-row-span: 1;
   grid-row: 1 / 2;
-  -webkit-animation: text-focus-in 1s both;
-          animation: text-focus-in 1s both;
 }
 
 @media (min-width: 768px) {
@@ -410,7 +409,7 @@ html {
 .banner p {
   font-size: clamp(2rem, 5vw, 3.5rem);
   font-family: "Caveat", cursive;
-  font-weight: 900;
+  font-weight: 400;
   color: #fff;
 }
 

@@ -33,6 +33,7 @@
         font-size: clamp(3rem,5vw, 6.2rem);
         color: $white;
         font-family: $cursive;
+        font-weight: 900;
         animation: invisible 3s forwards;
         
     }
@@ -116,6 +117,6 @@
         font-size: clamp(2.3rem, 5vw, 3rem);
     }
     .card-text{
-        font-size: clamp(1.2rem, 5vw, 1.5rem);
+        font-size: clamp(.8rem, 5vw, 1.4rem);
     }
 }
