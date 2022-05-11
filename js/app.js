@@ -13,11 +13,11 @@ const nav = document.querySelector('nav')
 
 window.sr = ScrollReveal();
 
-    sr.reveal('.header', {
+    /*sr.reveal('.header', {
         duration: 2000,
         origin: 'bottom',
         distance: '-100px'
-    });
+    });*/
     sr.reveal('.about-text', {
         duration: 2000,
         origin: 'bottom',
