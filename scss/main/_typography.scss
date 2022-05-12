@@ -121,5 +121,13 @@
     }
     .card-text{
         font-size: clamp(.8rem, 5vw, 1.4rem);
+        text-align: justify;
     }
+}
+
+
+//CONTACT FORM
+label{
+    margin-top: 3rem;
+    font-size: clamp(1.3rem, 2vw, 2.4rem);
 }

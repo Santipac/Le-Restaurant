@@ -105,6 +105,12 @@
 
 .food .card-text {
   font-size: clamp(0.8rem, 5vw, 1.4rem);
+  text-align: justify;
+}
+
+label {
+  margin-top: 3rem;
+  font-size: clamp(1.3rem, 2vw, 2.4rem);
 }
 
 *,
@@ -280,6 +286,9 @@ html {
 }
 
 .hero .header {
+  position: fixed;
+  z-index: 9999;
+  width: 100%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -331,6 +340,10 @@ html {
 .hero .header .open-nav {
   -webkit-transform: translateX(0%);
           transform: translateX(0%);
+}
+
+.scrolling-active {
+  background-color: #1d1d1b;
 }
 
 @media screen and (min-width: 769px) {
@@ -483,5 +496,55 @@ html {
   -ms-grid-column-align: center;
       justify-self: center;
   border-radius: .5rem;
+  max-width: 90%;
+}
+
+.contact-form {
+  height: -webkit-min-content;
+  height: -moz-min-content;
+  height: min-content;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.contact-form .row {
+  padding: 0 2rem;
+}
+
+.contact-form .row .email-input {
+  height: 5rem;
+}
+
+.contact-form .row .btn-form {
+  margin: 2rem 0;
+  width: 10rem;
+  height: 4rem;
+  background-color: #1d1d1b;
+  color: #fff;
+  font-size: 1.5rem;
+}
+
+.contact-form .row .btn-form:hover {
+  color: #fff;
+  background-color: #2f2f2d;
+}
+
+.footer {
+  height: -webkit-min-content;
+  height: -moz-min-content;
+  height: min-content;
+}
+
+.footer__info {
+  height: 30vh;
+  background-color: #1d1d1b;
+  color: #ffffff;
 }
 /*# sourceMappingURL=custom.css.map */
