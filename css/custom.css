@@ -26,8 +26,8 @@
   font-weight: 400;
 }
 
-.title {
-  height: 80%;
+.heading-1 {
+  height: 100%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -43,7 +43,7 @@
           justify-content: center;
 }
 
-.title h1 {
+.heading-1 h1 {
   font-size: clamp(3rem, 5vw, 6.2rem);
   color: #fff;
   font-family: "Caveat", cursive;
