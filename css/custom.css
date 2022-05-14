@@ -111,6 +111,99 @@
 label {
   margin-top: 3rem;
   font-size: clamp(1.3rem, 2vw, 2.4rem);
+  font-family: "Inter", sans-serif;
+}
+
+.contact__title {
+  font-size: clamp(3rem, 5vw, 4rem);
+  font-family: "Caveat", cursive;
+  text-align: center;
+}
+
+#exampleFormControlInput1,
+#exampleFormControlTextarea1 {
+  font-size: clamp(1.6rem, 6vw, 2.3rem);
+  font-family: "Inter", sans-serif;
+}
+
+.btn-form {
+  font-family: "Inter", sans-serif;
+  font-weight: 900;
+}
+
+.footer .social-media i {
+  font-size: clamp(2.3rem, 5vw, 2.8rem);
+  color: #fff;
+  padding: 2rem;
+}
+
+.footer .social-media i:hover {
+  color: #808080;
+}
+
+.footer .info {
+  color: #fff;
+  text-align: center;
+}
+
+.footer .info .footer__name {
+  font-family: "Caveat", cursive;
+  font-size: clamp(2.5rem, 5vw, 3.2rem);
+  margin: 2rem 0;
+}
+
+.footer .info .footer__navigation-title,
+.footer .info .footer__contact-title {
+  font-size: clamp(2.5rem, 5vw, 3.2rem);
+  font-family: "Inter", sans-serif;
+  font-weight: 500;
+  margin-bottom: 1rem;
+}
+
+.footer .info .footer__navigation-links {
+  text-decoration: none;
+  font-size: clamp(1.6rem, 4vw, 2.4rem);
+  color: #fff;
+}
+
+.footer .info .footer__navigation-links:hover {
+  color: #808080;
+}
+
+.footer .info .footer__contact-title {
+  margin-bottom: 2rem;
+}
+
+.footer .info .footer__contact-text {
+  font-size: clamp(1.5rem, 5vw, 2rem);
+  text-align: justify;
+}
+
+.footer .info .footer__contact-text i {
+  margin-right: .5rem;
+}
+
+.footer .copyright p {
+  font-size: clamp(1.8rem, 5vw, 2.2rem);
+  color: #fff;
+  text-align: center;
+}
+
+.footer .designer {
+  text-align: center;
+}
+
+.footer .designer p {
+  color: #fff;
+  font-size: clamp(1.8rem, 5vw, 2.2rem);
+}
+
+.footer .designer .author__name {
+  color: #fff;
+}
+
+.footer .designer .author__name:hover {
+  color: #808080;
 }
 
 *,
@@ -500,9 +593,7 @@ html {
 }
 
 .contact-form {
-  height: -webkit-min-content;
-  height: -moz-min-content;
-  height: min-content;
+  min-height: 70vh;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -540,11 +631,81 @@ html {
   height: -webkit-min-content;
   height: -moz-min-content;
   height: min-content;
+  background-color: #1d1d1b;
 }
 
-.footer__info {
-  height: 30vh;
-  background-color: #1d1d1b;
-  color: #ffffff;
+.footer .social-media {
+  padding: 0 2rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  border-bottom: 1px solid #808080;
+}
+
+.footer .social-media a {
+  text-decoration: none;
+  margin: 2rem 0;
+}
+
+.footer .info {
+  margin-top: 3rem;
+  padding: 0 2rem;
+  text-align: center;
+}
+
+.footer .info .row .col {
+  margin: 3rem 0;
+}
+
+.footer .info .footer__navigation {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.footer .info .footer__contact {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.footer .info .footer__contact-text {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.footer .rights {
+  padding: 2rem 0;
 }
 /*# sourceMappingURL=custom.css.map */

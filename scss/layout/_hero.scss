@@ -25,7 +25,7 @@
             position: fixed;
             right: 0;
             top: 0;
-            background: #1d1d1b;
+            background: $black;
             height: 100vh;
             width: 50%;
             z-index: 999;
@@ -56,7 +56,7 @@
 }
 
 .scrolling-active{
-    background-color: #1d1d1b ;
+    background-color: $black ;
 }
 
 
@@ -84,7 +84,7 @@
                         margin: 0;
                         padding: 1rem;
                         &:hover{
-                            color: rgba(#fff, .8);
+                            color: rgba($white, .8);
                         }
                     }
                 }

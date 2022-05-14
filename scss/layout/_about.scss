@@ -1,6 +1,6 @@
 .about{
     min-height:90vh;
-    background-color: #fff;
+    background-color: $white;
     display: grid;
     grid-template-rows: repeat(2, 1fr);
     align-items: center;
